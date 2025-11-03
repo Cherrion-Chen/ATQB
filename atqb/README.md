@@ -7,9 +7,5 @@ For any specific task, you can write a simple program that contains maybe only s
 This project is developed by Yurun Chen, who used to study in Shanghai Qibao High School and studying at the time in Shanghai Jiao Tong University, Intelligent Medical Enginnering Pilot Class.
 
 Time: 2025.11.1
-
 E-mail: chenyurun@sjtu.edu.cn
-
 <Version 1.0>
-
-
