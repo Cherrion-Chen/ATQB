@@ -1,4 +1,4 @@
-Auto Qibao: A light-weight project for School Affairs Automation
+# Auto Qibao: A light-weight project for School Affairs Automation
 
 This project aims at providing a light-weight framework to deal with student information easily and efficiently. Two basic classes are introduced: Stud for individual students and StudFrame for student groups.
 
@@ -8,3 +8,4 @@ This project is developed by Yurun Chen, who used to study in Shanghai Qibao Hig
 
 Time: 2025.11.1
 E-mail: chenyurun@sjtu.edu.cn
+
