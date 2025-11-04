@@ -337,7 +337,8 @@ class StudFrame:
         return len(self.studs)
     
     def __iter__(self):
-        return self
+        for i in range(len(self)):
+            yield self[i]
 
     def __next__(self):
         self.loc = 0
@@ -444,5 +445,6 @@ class StudFrame:
         
             if na: self.studs.pop(r)
             else: r += 1
+
 
 
