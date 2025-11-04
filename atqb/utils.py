@@ -13,6 +13,17 @@ def from_excel(path: str)->StudFrame:
     return op
 
 def sort(sts: StudFrame, column=None, func=None, order='up'):
+    '''
+    Sort the StudFrame.
+    
+    Input:
+        sts: origin StudFrame
+        column: name of information
+        func: preprocess function (if there is, it should be like f(x))
+        order: up or down
+    Output: StudFrame object
+    '''
+    
     if column is None:
         col = sts.id_list()
     else:
@@ -28,6 +39,13 @@ def sort(sts: StudFrame, column=None, func=None, order='up'):
 
 
 def cat(*frames: StudFrame):
+    '''
+    Concatenate all frame you input.
+    
+    Input: any number of StudFrame objects
+    Output: StudFrame object
+    '''
+    
     name_included = False
     info = ['姓名']
 
@@ -89,6 +107,10 @@ def divide_id(id)->dict:
             'num': num}
 
 def get_sum(stus: StudFrame, info_name, func=float, mode='cla')->dict:
+    '''
+    Sum up specified information of a class or grade.
+    '''
+    
     op = {}
     ind = stus.info.index(info_name)+1
 
@@ -101,6 +123,10 @@ def get_sum(stus: StudFrame, info_name, func=float, mode='cla')->dict:
     return op
 
 def count(stus: StudFrame, judge, mode='cla')->dict:
+    '''
+    Count the students making judge function return True.
+    '''
+    
     op = {}
     
     for stu in stus:
@@ -114,10 +140,18 @@ def count(stus: StudFrame, judge, mode='cla')->dict:
     return op
 
 def filter(stus: StudFrame, judge)->StudFrame:
+    '''
+    Return a StudFrame containing only students making judge return True.
+    '''
+    
     ls = [i for i in range(len(stus)) if judge(stus[i])]
     return stus[ls]
 
 def filter_cla(stus: StudFrame, cla: str)->StudFrame:
+    '''
+    Select the students from specified class.
+    '''
+    
     cla = str(cla)
     cla = '0'*(2-len(cla)) + cla
 
@@ -125,6 +159,10 @@ def filter_cla(stus: StudFrame, cla: str)->StudFrame:
     return stus[ls]
 
 def filter_gra(stus: StudFrame, gra: str)->StudFrame:
+    '''
+    Select the students from specified grade.
+    '''
+    
     gra = str(gra)
     ls = [i for i in range(len(stus)) if divide_id(stus.studs[i][0])['gra']==gra]
     return stus[ls]
