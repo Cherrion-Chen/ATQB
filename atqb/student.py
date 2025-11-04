@@ -247,7 +247,7 @@ class StudFrame:
             
             return
         
-        self[index] = value
+        self.studs[index] = [value.id] + value.values()
         
     def set_info(self, id: str, info_name, value):
         '''
@@ -437,3 +437,4 @@ class StudFrame:
         
             if na: self.studs.pop(r)
             else: r += 1
+
