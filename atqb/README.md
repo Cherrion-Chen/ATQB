@@ -11,7 +11,6 @@ Time: 2025.11.1
 
 E-mail: chenyurun@sjtu.edu.cn
 
-<Version 1.0>
+<Version 1.0> Initial Version.
 
-
-
+<Version 1.1> Accelerate the search process of student ID, optimize the information concatenation function.
