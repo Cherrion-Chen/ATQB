@@ -14,4 +14,4 @@ E-mail: chenyurun@sjtu.edu.cn
 
 <Version 1.0> Initial Version.
 
-<Version 1.1> Accelerate the search and modify process, optimize the StudFrame concatenation function.
+<Version 1.1> Accelerate the search and modify process, optimize the StudFrame's iterator method and the function for StudFrame concatenation.
