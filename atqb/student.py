@@ -337,7 +337,14 @@ class StudFrame:
         return len(self.studs)
     
     def __iter__(self):
-        return iter([self[i] for i in range(len(self))])
+        return self
+
+    def __next__(self):
+        self.loc = 0
+        if self.loc >= len(self):
+            raise StopIteration
+        self.loc += 1
+        return self[self.loc-1]
 
     def __str__(self):
         op = ['\t'.join(['学号']+list(map(str, self.info)))]
@@ -437,4 +444,5 @@ class StudFrame:
         
             if na: self.studs.pop(r)
             else: r += 1
+
 
