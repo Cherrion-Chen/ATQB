@@ -2,9 +2,9 @@
 
 This project aims at providing a light-weight framework to deal with student information easily and efficiently. Two basic classes are introduced: Stud for individual students and StudFrame for student groups.
 
-For any specific task, you can write a simple program that contains maybe only several lines of codes to finish the task, with the powerful tools provided by atqb library.
+For any specific task, you can write a simple program that contains maybe only several lines of codes to finish the task, with the powerful tools provided by ATQB.
 
-This project is developed by Yurun Chen, who used to study at Shanghai Qibao High School and is studying in the Intelligent Medical Engineering Pilot Class at Shanghai Jiao Tong University at the time.
+This project is developed by Yurun Chen, who used to study in Shanghai Qibao High School and studying at the time in Shanghai Jiao Tong University, Intelligent Medical Enginnering Pilot Class.
 
 ===========================================================================================
 
