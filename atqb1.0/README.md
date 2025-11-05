@@ -12,6 +12,4 @@ Time: 2025.11.1
 
 E-mail: chenyurun@sjtu.edu.cn
 
-<Version 1.0> Initial Version.
-
-
+<Version 1.0>
